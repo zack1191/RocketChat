@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/black"
+    tools:context = ".ui.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/constraintLayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "60dp"
+        android:layout_marginEnd = "8dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent">
+
+        <TextView
+            android:id = "@+id/tvTitle"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/title"
+            android:textColor = "@color/white"
+            android:textSize = "36sp"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+        <TextView
+            android:id = "@+id/textView3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "8dp"
+            android:text = "Please Enter your Account"
+            android:textColor = "#9A9A9A"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/tvTitle"/>
+
+        <LinearLayout
+            android:id = "@+id/loginLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "64dp"
+            android:layout_marginEnd = "16dp"
+            android:orientation = "vertical"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textView3">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id = "@+id/etUserNameTextInput"
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView4">
+
+                <EditText
+                    android:id = "@+id/etUserNameLogin"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "46dp"
+                    android:layout_marginTop = "4dp"
+                    android:hint = "User name"
+                    android:inputType = "textPersonName"
+                    android:padding = "8dp"
+                    android:textColor = "#9A9A9A"
+                    android:textSize = "@dimen/text_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id = "@+id/etPasswordTextInput"
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView4"
+                app:passwordToggleEnabled = "true"
+                app:passwordToggleTint = "@color/white">
+
+                <EditText
+                    android:id = "@+id/etPasswordEditText"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "46dp"
+                    android:layout_marginTop = "4dp"
+                    android:hint = "Password"
+                    android:inputType = "textPassword"
+                    android:padding = "8dp"
+                    android:textColor = "@color/white"
+                    android:textSize = "@dimen/text_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id = "@+id/signUpLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "64dp"
+            android:layout_marginEnd = "16dp"
+            android:orientation = "vertical"
+            android:visibility = "gone"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/textView3">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView4">
+
+                <EditText
+
+                    android:id = "@+id/etNameSignUp"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "46dp"
+                    android:layout_marginTop = "4dp"
+                    android:hint = "User name"
+                    android:inputType = "text"
+                    android:padding = "8dp"
+                    android:textColor = "@color/white"
+                    android:textSize = "@dimen/text_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView4">
+
+                <EditText
+
+                    android:id = "@+id/etEmailSignUp"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "46dp"
+                    android:layout_marginTop = "4dp"
+                    android:hint = "Email"
+                    android:inputType = "textEmailAddress"
+                    android:padding = "8dp"
+                    android:textColor = "@color/white"
+                    android:textSize = "@dimen/text_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView4"
+                app:passwordToggleEnabled = "true"
+                app:passwordToggleTint = "@color/white">
+
+                <EditText
+
+                    android:id = "@+id/etPasswordSignUp"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "46dp"
+                    android:layout_marginTop = "4dp"
+                    android:hint = "Password"
+                    android:inputType = "textPassword"
+                    android:padding = "8dp"
+                    android:textColor = "@color/white"
+                    android:textSize = "@dimen/text_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style = "@style/RoundCornerEditTextBox"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView4"
+                app:passwordToggleEnabled = "true"
+                app:passwordToggleTint = "@color/white">
+
+                <EditText
+
+                    android:id = "@+id/etConfirmPasswordSignUp"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "46dp"
+                    android:layout_marginTop = "4dp"
+                    android:hint = "Confirm password"
+                    android:inputType = "textPassword"
+                    android:padding = "8dp"
+                    android:textColor = "@color/white"
+                    android:textSize = "@dimen/text_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id = "@+id/btnSignUp"
+            android:layout_width = "match_parent"
+            android:layout_height = "40dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "32dp"
+            android:layout_marginEnd = "16dp"
+            android:background = "@drawable/gradient_background"
+            android:text = "Register"
+            android:textAllCaps = "false"
+            android:textColor = "@color/white"
+            android:textSize = "14sp"
+            android:visibility = "gone"
+            app:backgroundTint = "@null"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintHorizontal_bias = "0.0"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/signUpLayout"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id = "@+id/btnLogin"
+            android:layout_width = "match_parent"
+            android:layout_height = "40dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "32dp"
+            android:layout_marginEnd = "16dp"
+            android:background = "@drawable/gradient_background"
+            android:text = "Log In"
+            android:textAllCaps = "false"
+            android:textColor = "@color/white"
+            android:textSize = "14sp"
+            app:backgroundTint = "@null"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintHorizontal_bias = "0.0"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/loginLayout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id = "@+id/tvLogin"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "16dp"
+        android:text = "Already have an account, Log In"
+        android:textColor = "@color/white"
+        android:visibility = "gone"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"/>
+
+    <TextView
+        android:id = "@+id/tvSignup"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "16dp"
+        android:text = "Don't have an account? Sign Up"
+        android:textColor = "@color/white"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"/>
+
+    <ir.alirezabdn.wp7progress.WP7ProgressBar
+        android:id = "@+id/wp7progressBar"
+        android:layout_width = "0dp"
+        android:layout_height = "10dp"
+        android:layout_centerVertical = "true"
+        android:layout_marginStart = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:layout_marginBottom = "50dp"
+        app:animationDuration = "2300"
+        app:indicatorColor = "@color/orange"
+        app:indicatorHeight = "7"
+        app:indicatorRadius = "5"
+        app:interval = "100"
+        app:layout_constraintBottom_toTopOf = "@+id/tvSignup"
+        app:layout_constraintEnd_toEndOf = "@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf = "@+id/constraintLayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

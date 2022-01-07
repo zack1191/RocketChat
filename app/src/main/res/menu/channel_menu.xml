@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto">
+    <item
+        android:id = "@+id/menu_search"
+        android:title = "Search"
+        app:showAsAction="never"/>
+
+    <item
+        android:id = "@+id/menu_members"
+        app:showAsAction ="never"
+        android:title  ="Member"/>
+
+    <item
+        android:id="@+id/menu_photo_gallery"
+        android:title  ="Photo Gallery"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_mute"
+        android:title  ="Mute this Group"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_clear_chat"
+        android:title  ="Clear Chat history"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_leave_group"
+        android:title  ="Leave Group"
+        app:showAsAction="never"/>
+
+</menu>

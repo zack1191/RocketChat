@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/black"
+    android:overScrollMode = "never">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/rvChat"
+            android:layout_width = "match_parent"
+
+            android:layout_height = "match_parent"
+            android:layout_marginStart = "8dp"
+            android:layout_marginTop = "8dp"
+            android:layout_marginEnd = "8dp"
+            android:layout_marginBottom = "8dp"
+            android:nestedScrollingEnabled = "false"
+            android:overScrollMode = "never"
+            app:layoutManager = "LinearLayoutManager"
+            tools:context = ".ui.all.AllFragment"
+            tools:itemCount = "10"
+            tools:listitem = "@layout/item_chat"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+

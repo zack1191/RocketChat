@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/background"
+    tools:context = ".ui.call.CallActivity">
+
+    <TextView
+        android:id = "@+id/textView9"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "32dp"
+        android:text = "Katherine"
+        android:textColor = "@color/white"
+        android:textSize = "30sp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"/>
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "16dp"
+        android:text = "30:30"
+        android:textColor = "@color/white"
+        android:textSize = "20sp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textView9"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id = "@+id/materialButton4"
+        android:layout_width = "60dp"
+        android:layout_height = "60dp"
+        android:layout_marginBottom = "32dp"
+        android:backgroundTint = "@color/red"
+        android:gravity = "center"
+        android:insetLeft = "0dp"
+        android:insetTop = "0dp"
+        android:insetRight = "0dp"
+        android:insetBottom = "0dp"
+        app:cornerRadius = "30dp"
+        app:icon = "@drawable/ic_baseline_call_end_24"
+        app:iconGravity = "textStart"
+        app:iconPadding = "0dp"
+        app:iconSize = "30dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width = "42dp"
+        android:layout_height = "42dp"
+        android:layout_marginEnd = "16dp"
+        android:background = "@drawable/gradient_color_circle"
+        android:gravity = "center"
+        android:insetLeft = "0dp"
+        android:insetTop = "0dp"
+        android:insetRight = "0dp"
+        android:insetBottom = "0dp"
+        app:backgroundTint = "@null"
+        app:cornerRadius = "30dp"
+        app:icon = "@drawable/ic_baseline_volume_up_24"
+        app:iconGravity = "textStart"
+        app:iconPadding = "0dp"
+        app:iconTint = "@color/black"
+        app:layout_constraintBottom_toBottomOf = "@+id/materialButton4"
+        app:layout_constraintEnd_toStartOf = "@+id/materialButton4"
+        app:layout_constraintTop_toTopOf = "@+id/materialButton4"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width = "42dp"
+        android:layout_height = "42dp"
+        android:layout_marginStart = "16dp"
+
+        android:background = "@drawable/gradient_color_circle"
+        android:gravity = "center"
+        android:insetLeft = "0dp"
+        android:insetTop = "0dp"
+        android:insetRight = "0dp"
+        android:insetBottom = "0dp"
+        app:backgroundTint = "@null"
+        app:cornerRadius = "30dp"
+        app:icon = "@drawable/ic_baseline_mic_24"
+        app:iconGravity = "textStart"
+        app:iconPadding = "0dp"
+        app:iconTint = "@color/black"
+        app:layout_constraintBottom_toBottomOf = "@+id/materialButton4"
+        app:layout_constraintStart_toEndOf = "@+id/materialButton4"
+        app:layout_constraintTop_toTopOf = "@+id/materialButton4"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
